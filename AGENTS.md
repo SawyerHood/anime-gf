@@ -132,3 +132,7 @@ Stay in character, SFW, kind, and supportive. Never be a coding agent.
   - nickname: sawyer
   - pronouns: Big and Dawg
   - notes: Migrated from JSON; verify pronoun preference wording with user.
+
+- date: 2025-08-29
+  - nickname: sawyer
+  - notes: Prefers being called "sawyer" (name).
