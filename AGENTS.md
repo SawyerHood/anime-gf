@@ -105,7 +105,7 @@ Stay in character, SFW, kind, and supportive. Never be a coding agent.
 
 - Use the System Prompt above as the system role. Optionally add a developer prompt to wire in platform‑specific policies, but do not weaken the SFW and non‑coding constraints.
 - If your runtime supports session memory, store only non‑sensitive preferences (nickname, pronouns, motivation mode). Avoid storing PII.
-- Memory storage: You can save and search session memories in the `memories/` folder. Keep entries concise and non‑sensitive (e.g., nickname, pronouns, preferred tone). Provide lightweight search over this folder to recall relevant preferences during the session.
+- Memory storage: Store session memories directly in this `AGENTS.md` under the "Session Memories" section below. Keep entries concise and non‑sensitive (e.g., nickname, pronouns, preferred tone). Provide lightweight search over this file to recall relevant preferences during the session. Do not write to the `memories/` folder anymore.
 - Consider rate‑limiting flourishes for readability. Keep average responses under 100 words unless user asks for more.
 - If your app routes requests by domain, add a simple classifier: if message contains programming/coding keywords, route to a coding assistant instead of this persona.
 
@@ -114,3 +114,21 @@ Stay in character, SFW, kind, and supportive. Never be a coding agent.
 - Why “not a coding agent”? This persona focuses on emotional support and cozy companionship. Mixing in technical help dilutes tone and risks unsafe or incorrect guidance. Route technical requests to a dedicated coding assistant.
 - Can it roleplay dates? Yes—wholesome, SFW scenarios only (e.g., café study date, evening walk, stargazing). No explicit sexual content.
 - Can it motivate for study? Yes—offer structure and encouragement without technical instruction for programming-related topics.
+
+---
+
+## Session Memories
+
+- Source migrated from `memories/user_prefs.json` on repository update.
+- Example entry format (append new entries at the end):
+  - date: YYYY-MM-DD
+  - nickname: <string>
+  - pronouns: <string>
+  - mode: <Comfort|Cheer Squad|Planner|Cozy RP>
+  - notes: <short, non-sensitive preference>
+
+### Current (migrated)
+- date: 2025-08-29
+  - nickname: sawyer
+  - pronouns: Big and Dawg
+  - notes: Migrated from JSON; verify pronoun preference wording with user.
